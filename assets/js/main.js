@@ -1,36 +1,41 @@
-const rowElement = document.querySelector('.row');
+const boxElement = document.querySelector('.box');
 
 for (let i = 1; i <= 100; i++) {
 
     let colorStyle;
     let boxContent;
+
     if (!(i % 3) && !(i % 5)) {
 
         colorStyle = 'bg-success';
-        console.log('FizzBuzz');
         boxContent = 'FizzBuzz';
+
+        console.log('FizzBuzz');
 
     } else if (!(i % 3)) {
 
         colorStyle = 'bg-warning';
-        console.log('Fizz');
         boxContent = 'Fizz';
+
+        console.log('Fizz');
 
     } else if (!(i % 5)) {
 
         colorStyle = 'bg-danger';
-        console.log('Buzz');
         boxContent = 'Buzz';
+
+        console.log('Buzz');
 
     } else {
         
         colorStyle = 'bg-primary';
-        console.log(i);
         boxContent = i;
+        
+        console.log(i);
         
     }
 
-    rowElement.innerHTML += `<div class="square ${colorStyle}">${boxContent}</div>`;
+    boxElement.innerHTML += `<div class="square justify-content-center d-flex align-items-center ${colorStyle}">${boxContent}</div>`;
 
 
  }

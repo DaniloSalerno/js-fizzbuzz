@@ -1,4 +1,4 @@
-.row > div {
-    width: 10%;
+.square {
+    width: calc(10% - 8px);
     aspect-ratio: 1/1;
 }
