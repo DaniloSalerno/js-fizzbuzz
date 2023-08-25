@@ -9,24 +9,24 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1,
  Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 const rowElement = document.querySelector('.row');
 
-
- for (let i = 1; i <= 100; i++) {
-
-     
-     let colorStyle;
+for (let i = 1; i <= 100; i++) {
+    //const boxContent = document.querySelector('.col');
+    let colorStyle;
      
     if (!(i % 3) && !(i % 5)) {
 
+        //boxContent.textContent = 'FizzBuzz';
         colorStyle = 'bg-success';
         console.log('FizzBuzz');
 
     } else if (!(i % 3)) {
-        
+
+        //boxContent.textContent = 'Fizz';
         colorStyle = 'bg-warning';
         console.log('Fizz');
 
     } else if (!(i % 5)) {
-
+        //boxContent.textContent = 'Buzz';
         colorStyle = 'bg-danger';
         console.log('Buzz');
 
@@ -36,7 +36,8 @@ const rowElement = document.querySelector('.row');
         console.log(i);
         
     }
-    rowElement.innerHTML += `<div class="col ${colorStyle}">${i}</div>`;
+
+    rowElement.innerHTML += `<div class="square ${colorStyle}">${i}</div>`;
 
 
  }
