@@ -10,7 +10,7 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1,
 const rowElement = document.querySelector('.row');
 
 for (let i = 1; i <= 100; i++) {
-    //const boxContent = document.querySelector('.col');
+    //const boxContent = document.querySelector('.square');
     let colorStyle;
      
     if (!(i % 3) && !(i % 5)) {
